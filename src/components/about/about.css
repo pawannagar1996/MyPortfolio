@@ -1,0 +1,314 @@
+
+
+/* .aboutMe {
+    min-height: 100vh;
+  } */
+  
+/* ===== about me ka left side ====== */
+
+.aboutMe .leftRight{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10rem;
+    margin-top: 10rem;
+}
+.aboutMe .leftRight .left{
+    width: 50%;
+ 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  flex-direction: column;
+ 
+}
+.aboutMe .leftRight .left .left-side-row{
+    width:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.aboutMe .leftRight .left .left-side-row .left-side{
+    width: 50%;
+    padding:2rem 3rem;
+    text-align: end;
+    border: 1px solid rgba(255,180,0,0.3);
+    color: var(--white);
+    border-radius: 0.5rem;
+    text-transform: uppercase;
+}
+.aboutMe .leftRight .left .left-side-row .left-side h3{
+   font-size:5rem;
+   color: var(--PrimaryColor);
+   position: relative;
+   line-height: 3rem;
+}
+.aboutMe .leftRight .left .left-side-row .left-side h3 sup{
+   font-weight: 400;
+}
+
+.aboutMe .leftRight .left .left-side-row .left-side p{
+   margin-top: 1.5rem;
+}
+.aboutMe .leftRight .left .left-side-row .left-side p span{
+   display: block;
+}
+.aboutMe .leftRight .left .left-side-row-1 .left-side:nth-child(1){
+    margin-right: 1.5rem;
+    margin-bottom: 3rem;
+}
+.aboutMe .leftRight .left .left-side-row-1 .left-side:nth-child(2){
+    margin-left: 1.5rem;
+    margin-bottom: 3rem;
+}
+.aboutMe .leftRight .left .left-side-row-2 .left-side:nth-child(1){
+    margin-right: 1.5rem;
+}
+.aboutMe .leftRight .left .left-side-row-2 .left-side:nth-child(2){
+    margin-left: 1.5rem;
+}
+
+/* ===== about me ka right side ====== */
+
+.aboutMe .leftRight .right{
+    width: 50%;
+    color: var(--white);
+    
+}
+.aboutMe .leftRight .right h2{
+   color: var(--PrimaryColor);
+}
+.aboutMe .leftRight .right p{
+   margin-top: 1rem;
+}
+
+
+/* ===== skills ===== */
+
+.skills{
+    padding-bottom: 10rem;
+}
+
+
+.skills .leftRight{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10rem;
+    margin-top: 10rem;
+}
+/* ===== skills me ka left side ====== */
+
+.skills .leftRight .left{
+    width: 50%;
+ 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  flex-direction: column;
+}
+.skills .leftRight .left .skills-container{
+    width: 100%;
+    display: grid;
+  grid-template-columns: 22.5% 22.5% 22.5% 22.5%;
+  row-gap: 2rem;
+  column-gap: 2rem;
+  flex-wrap:nowrap;
+ 
+}
+.skills .leftRight .left .skills-container .skills-items{
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+border: 1px solid rgba(255,180,0,0.3);
+color: var(--white);
+border-radius: 0.5rem;
+text-transform: uppercase;
+padding: 2rem;
+transition: all 0.5s ease;
+
+}
+
+.skills .leftRight .left .skills-container .skills-items img{
+width: 30%;
+vertical-align: middle;
+transition: all 0.5s ease;
+}
+.skills .leftRight .left .skills-container .skills-items h4{
+    transition: all 0.5s ease;
+margin-top: 2rem;
+}
+.skills .leftRight .left .skills-container .skills-items:hover{
+    transform: scale(1.1);
+border: 1px solid rgba(255,180,0,0.8);
+}
+.skills .leftRight .left .skills-container .skills-items:hover h4{
+color: var(--PrimaryColor);
+}
+.skills .leftRight .left .skills-container .skills-items:hover img{
+transform: rotateY(360deg);
+}
+
+/* ===== skills me ka right side ====== */
+.skills .leftRight .right{
+    width: 50%;
+ /* height: 50rem; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  flex-direction: column;
+ 
+  overflow: hidden;
+}
+
+.tagcloud{
+    display: inline-block;
+    font-weight: 500;
+    letter-spacing: 0.2rem;
+    font-size: 1.8rem;
+    width: 100%!important;
+    height: 46rem!important;
+}
+
+.tagcloud--item {
+    color: var(--white);
+    text-transform: uppercase;
+}
+.tagcloud--item:hover {
+    color: var(--PrimaryColor);
+}
+
+@media screen and (max-width: 992px) {
+    .skills .leftRight .left .skills-container{
+        display: grid;
+      grid-template-columns: 50% 50%;
+    }
+
+}
+
+
+@media screen and (max-width: 768px) {
+  
+    .aboutMe .leftRight{
+        justify-content: center;
+        gap: 5rem;
+        margin-top: 5rem;
+        flex-direction: column;
+    }
+      /* left */
+    .aboutMe .leftRight .left{
+        width: 100%;
+    }
+
+    .aboutMe .leftRight .left .left-side-row .left-side{
+        text-align: start;
+    }
+
+    .aboutMe .leftRight .left .left-side-row .left-side h3{
+       font-size:4rem; 
+    }
+    
+
+  /* right */
+    .aboutMe .leftRight .right{
+        width: 100%;
+        color: var(--white);
+    }
+   
+/* ============skills==== */
+    .skills{
+        padding-bottom: 5rem;
+    }
+    .skills .leftRight{
+        justify-content: center;
+        gap: 5rem;
+        margin-top: 5rem;
+        flex-direction: column;
+    }
+    /* ===== skills me ka left side ====== */
+    
+    .skills .leftRight .left{
+        order: 2;
+        width: 100%;
+    }
+    .skills .leftRight .left .skills-container{
+      grid-template-columns: 1fr 1fr;
+      gap: 4rem;
+    }
+    /* ===== skills me ka right side ====== */
+    .skills .leftRight .right{
+        order: 1;
+        width: 100%;
+    }
+
+}
+
+
+@media screen and (max-width: 430px) {
+/* ===== about me ka left side ====== */
+
+.aboutMe .leftRight{
+    gap: 4rem;
+    margin-top: 4rem;
+}
+.aboutMe .leftRight .left .left-side-row{
+   flex-direction: column;
+}
+.aboutMe .leftRight .left .left-side-row .left-side{
+    width: 100%;
+    padding:2rem 3rem;
+}
+
+.aboutMe .leftRight .left .left-side-row-1 .left-side:nth-child(1){
+    margin-right: 0rem;
+    margin-bottom: 0rem;
+}
+.aboutMe .leftRight .left .left-side-row-1 .left-side:nth-child(2){
+    margin-left: 0rem;
+    margin-bottom: 0rem;
+    margin-top: 4rem;
+}
+.aboutMe .leftRight .left .left-side-row-2 .left-side:nth-child(1){
+    margin-right: 0rem;
+    margin-top: 4rem;
+}
+.aboutMe .leftRight .left .left-side-row-2 .left-side:nth-child(2){
+    margin-left: 0rem;
+    margin-top: 4rem;
+}
+
+/* ===== skills ===== */
+
+.skills{
+    padding-bottom: 4rem;
+}
+
+
+.skills .leftRight{
+    gap: 4rem;
+    margin-top: 4rem;
+}
+/* ===== skills me ka left side ====== */
+
+.skills .leftRight .left .skills-container{
+   
+  grid-template-columns: 1fr;
+  gap: 4rem;
+}
+.skills .leftRight .left .skills-container .skills-items{
+padding: 3rem;
+
+}
+
+.skills .leftRight .left .skills-container .skills-items img{
+width: 20%;
+}
+
+
+/* ===== skills me ka right side ====== */
+
+
+
+
+}
