@@ -19,7 +19,7 @@ export const Banner = (props) => {
        
         <h1>
         <span>.I'M Pawan Nagar</span>
-        <span>Web Devloper</span>
+        <span>Web Developer</span>
         </h1>
       
         <p >
