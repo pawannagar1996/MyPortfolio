@@ -1,11 +1,10 @@
-
-
-/* .aboutMe {
+.about-skill{
     min-height: 100vh;
-  } */
-  
+  }
+.aboutMe{
+    padding: 10rem 0rem;
+  }
 /* ===== about me ka left side ====== */
-
 .aboutMe .leftRight{
     display: flex;
     justify-content: space-between;
@@ -15,12 +14,10 @@
 }
 .aboutMe .leftRight .left{
     width: 50%;
- 
     display: flex;
     justify-content: center;
     align-items: center;
   flex-direction: column;
- 
 }
 .aboutMe .leftRight .left .left-side-row{
     width:100%;
@@ -46,7 +43,6 @@
 .aboutMe .leftRight .left .left-side-row .left-side h3 sup{
    font-weight: 400;
 }
-
 .aboutMe .leftRight .left .left-side-row .left-side p{
    margin-top: 1.5rem;
 }
@@ -67,13 +63,10 @@
 .aboutMe .leftRight .left .left-side-row-2 .left-side:nth-child(2){
     margin-left: 1.5rem;
 }
-
 /* ===== about me ka right side ====== */
-
 .aboutMe .leftRight .right{
     width: 50%;
     color: var(--white);
-    
 }
 .aboutMe .leftRight .right h2{
    color: var(--PrimaryColor);
@@ -81,15 +74,10 @@
 .aboutMe .leftRight .right p{
    margin-top: 1rem;
 }
-
-
 /* ===== skills ===== */
-
 .skills{
     padding-bottom: 10rem;
 }
-
-
 .skills .leftRight{
     display: flex;
     justify-content: space-between;
@@ -98,10 +86,8 @@
     margin-top: 10rem;
 }
 /* ===== skills me ka left side ====== */
-
 .skills .leftRight .left{
     width: 50%;
- 
     display: flex;
     justify-content: center;
     align-items: center;
@@ -114,7 +100,6 @@
   row-gap: 2rem;
   column-gap: 2rem;
   flex-wrap:nowrap;
- 
 }
 .skills .leftRight .left .skills-container .skills-items{
 display: flex;
@@ -127,9 +112,7 @@ border-radius: 0.5rem;
 text-transform: uppercase;
 padding: 2rem;
 transition: all 0.5s ease;
-
 }
-
 .skills .leftRight .left .skills-container .skills-items img{
 width: 30%;
 vertical-align: middle;
@@ -149,7 +132,6 @@ color: var(--PrimaryColor);
 .skills .leftRight .left .skills-container .skills-items:hover img{
 transform: rotateY(360deg);
 }
-
 /* ===== skills me ka right side ====== */
 .skills .leftRight .right{
     width: 50%;
@@ -158,10 +140,8 @@ transform: rotateY(360deg);
     justify-content: center;
     align-items: center;
   flex-direction: column;
- 
   overflow: hidden;
 }
-
 .tagcloud{
     display: inline-block;
     font-weight: 500;
@@ -170,7 +150,6 @@ transform: rotateY(360deg);
     width: 100%!important;
     height: 46rem!important;
 }
-
 .tagcloud--item {
     color: var(--white);
     text-transform: uppercase;
@@ -184,12 +163,12 @@ transform: rotateY(360deg);
         display: grid;
       grid-template-columns: 50% 50%;
     }
-
 }
 
-
 @media screen and (max-width: 768px) {
-  
+    .aboutMe{
+        padding: 5rem 0rem;
+      }
     .aboutMe .leftRight{
         justify-content: center;
         gap: 5rem;
@@ -200,22 +179,17 @@ transform: rotateY(360deg);
     .aboutMe .leftRight .left{
         width: 100%;
     }
-
     .aboutMe .leftRight .left .left-side-row .left-side{
         text-align: start;
     }
-
     .aboutMe .leftRight .left .left-side-row .left-side h3{
        font-size:4rem; 
     }
-    
-
   /* right */
     .aboutMe .leftRight .right{
         width: 100%;
         color: var(--white);
     }
-   
 /* ============skills==== */
     .skills{
         padding-bottom: 5rem;
@@ -227,7 +201,6 @@ transform: rotateY(360deg);
         flex-direction: column;
     }
     /* ===== skills me ka left side ====== */
-    
     .skills .leftRight .left{
         order: 2;
         width: 100%;
@@ -241,13 +214,13 @@ transform: rotateY(360deg);
         order: 1;
         width: 100%;
     }
-
 }
 
-
 @media screen and (max-width: 430px) {
+    .aboutMe{
+        padding: 4rem 0rem;
+      }
 /* ===== about me ka left side ====== */
-
 .aboutMe .leftRight{
     gap: 4rem;
     margin-top: 4rem;
@@ -277,38 +250,24 @@ transform: rotateY(360deg);
     margin-left: 0rem;
     margin-top: 4rem;
 }
-
 /* ===== skills ===== */
-
 .skills{
-    padding-bottom: 4rem;
+    padding-bottom: 10.5rem;
 }
-
-
 .skills .leftRight{
     gap: 4rem;
     margin-top: 4rem;
 }
 /* ===== skills me ka left side ====== */
-
 .skills .leftRight .left .skills-container{
-   
   grid-template-columns: 1fr;
   gap: 4rem;
 }
 .skills .leftRight .left .skills-container .skills-items{
 padding: 3rem;
-
 }
-
 .skills .leftRight .left .skills-container .skills-items img{
 width: 20%;
 }
-
-
 /* ===== skills me ka right side ====== */
-
-
-
-
 }

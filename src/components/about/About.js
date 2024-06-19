@@ -5,45 +5,41 @@ import "./about.css";
 import SkillData from "./SkillsData";
 
 export const About = (props) => {
-  
-  useEffect(()=>{
-
+  useEffect(() => {
     return () => {
       const cotainer = ".tagcloud";
       const texts = [
-        "HTML5" ,
-        "CSS3" ,
-        "SASS" ,
-        "Bootstarp5" ,
-        "JavaScript" ,
-        "JQuery" ,
-        "TypeScript" ,
-        "ReactJs" ,
-        "Routing" ,
-        "ReduxJs" ,
-        "FiberJs" ,
-        "SwiperJs" ,
-        "TagCloudJs" ,
-        "FramerMotionJs" ,
-        "ReactIconsJs" ,
-        "ReactAnimatedCursorJs" ,
-
+        "HTML5",
+        "CSS3",
+        "SASS",
+        "Bootstarp5",
+        "JavaScript",
+        "JQuery",
+        "TypeScript",
+        "ReactJs",
+        "Routing",
+        "ReduxJs",
+        "FiberJs",
+        "SwiperJs",
+        "TagCloudJs",
+        "FramerMotionJs",
+        "ReactIconsJs",
+        "ReactAnimatedCursorJs",
       ];
       const options = {
-        radius :300 ,
-        maxSpeed : "normal",
-        initSpeed : "normal" ,
-        keep : true
+        radius: 300,
+        maxSpeed: "normal",
+        initSpeed: "normal",
+        keep: true,
       };
+      TagCloud(cotainer, texts, options);
 
-      TagCloud(cotainer , texts , options)
-    }
-  }
-  ,[])
+    };
+  }, []);
 
   return (
-    <div className="wrapper">
-      <div className="aboutMe layout pTB100">
+    <div className="wrapper about-skill">
+      <div className="aboutMe layout">
         <div className="main-title">
           <h1>
             About <span>Me</span>
@@ -98,17 +94,24 @@ export const About = (props) => {
               building excellent software that improves the lives of those
               around me.
             </p>
-            <button className="magnatic" onMouseEnter={()=>{props.one()}} onMouseOut={()=>{props.two()}}>
+            <button
+              className="magnatic"
+              onMouseEnter={() => {
+                props.one();
+              }}
+              onMouseOut={() => {
+                props.two();
+              }}
+            >
               <span>Download Cv</span>
-              <span><FaDownload />
+              <span>
+                <FaDownload />
               </span>
             </button>
           </div>
         </div>
       </div>
-
       {/* ======= my skill ====== */}
-
       <div className="skills layout">
         <div className="main-title">
           <h1>
@@ -120,10 +123,7 @@ export const About = (props) => {
         <div className="leftRight">
           <div className="left">
             <div className="skills-container">
-             <SkillData />
-              
-              
-             
+              <SkillData />
             </div>
           </div>
 

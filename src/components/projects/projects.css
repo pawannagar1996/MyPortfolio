@@ -81,7 +81,6 @@
   margin-left: 1rem;
 }
 
-
 @media screen and (max-width: 768px) {
   .swiper {
     margin-top: 5rem;
@@ -90,7 +89,6 @@
   .projectBtn button {
     margin-top: 4rem;
   }
-
 }
 
 @media screen and (max-width: 420px) {
@@ -105,5 +103,4 @@
   .projectBtn button {
     margin-top: 4rem;
   }
-
 }

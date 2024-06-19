@@ -1,8 +1,8 @@
 .contact {
     min-height: 100vh;
-  }
-  
-.contact .leftRight{
+}
+
+.contact .leftRight {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -11,230 +11,243 @@
 }
 
 /* contact ka left side section */
-
-.contact .leftRight .left{
+.contact .leftRight .left {
     width: 65%;
- 
     display: flex;
     justify-content: center;
     align-items: center;
-  flex-direction: column;
-
+    flex-direction: column;
 }
-.contact form{
+
+.contact form {
     width: 100%;
     height: auto;
-display: flex;
-flex-direction: column;
-gap: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
 }
-.contact form div{
+
+.contact form div {
     width: 100%;
     display: flex;
     gap: 2rem;
     justify-content: end;
 }
-.contact form div input{
+
+.contact form div input {
     width: 50%;
     border-radius: 3rem;
     padding: 1rem 3rem;
-    border:1px solid var(--backgroundBlack);
+    border: 1px solid var(--backgroundBlack);
     outline: none;
     background-color: var(--backgroundMeniIcons);
     text-align: end;
-    color:var(--white);
+    color: var(--white);
     font-size: 1.6rem;
     font-family: "Poppins", sans-serif;
 }
-.contact form div input::placeholder{
+
+.contact form div input::placeholder {
     text-transform: uppercase;
-    color:rgba(255, 255, 255, 0.5);
-  font-size: 1.6rem;
-  font-family: "Poppins", sans-serif;
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 1.6rem;
+    font-family: "Poppins", sans-serif;
 }
-.contact form div input:focus{
-    border:1px solid var(--PrimaryColor);
+
+.contact form div input:focus {
+    border: 1px solid var(--PrimaryColor);
 }
-.contact form div textarea{
+
+.contact form div textarea {
     width: 100%;
     border-radius: 3rem;
     padding: 1rem 3rem;
-    border:1px solid var(--backgroundBlack);
+    border: 1px solid var(--backgroundBlack);
     outline: none;
-    background-color: var( --backgroundMeniIcons);
+    background-color: var(--backgroundMeniIcons);
     min-height: 20rem;
     text-align: end;
-    color:var(--white);
+    color: var(--white);
     font-size: 1.6rem;
     font-family: "Poppins", sans-serif;
 }
-.contact form div textarea::placeholder{
-    text-transform: uppercase;
-    color:rgba(255, 255, 255, 0.5);
-    font-size: 1.6rem;
-    font-family: "Poppins", sans-serif;
-}
-.contact form div textarea:focus{
-    border:1px solid var(--PrimaryColor);
-}
-.contact form div button{
-    margin-top: 1rem;
 
+.contact form div textarea::placeholder {
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 1.6rem;
+    font-family: "Poppins", sans-serif;
+}
+
+.contact form div textarea:focus {
+    border: 1px solid var(--PrimaryColor);
+}
+
+.contact form div button {
+    margin-top: 1rem;
 }
 
 /* contact ka right side section */
-
-.contact .leftRight .right{
+.contact .leftRight .right {
     width: 35%;
     display: flex;
     justify-content: center;
     align-items: end;
-  flex-direction: column;
-  gap: 4rem;
-  color: var(--white);
+    flex-direction: column;
+    gap: 4rem;
+    color: var(--white);
 }
 
-.contact .leftRight .right .right-content{
-   text-align: end;
-   font-size: 1.6rem;
-   font-weight: 500;
+.contact .leftRight .right .right-content {
+    text-align: end;
+    font-size: 1.6rem;
+    font-weight: 500;
 }
-.contact .leftRight .right .right-content h3{
-  font-size: 3rem;
-  text-transform: uppercase;
+
+.contact .leftRight .right .right-content h3 {
+    font-size: 3rem;
+    text-transform: uppercase;
 }
-.contact .leftRight .right .right-content p{
-margin-top: 1rem;
+
+.contact .leftRight .right .right-content p {
+    margin-top: 1rem;
 }
-.contact .leftRight .right .right-content-icon{
-display: flex;
+
+.contact .leftRight .right .right-content-icon {
+    display: flex;
 }
-.contact .leftRight .right .right-content-icon .head{
-    width:100%;
+
+.contact .leftRight .right .right-content-icon .head {
+    width: 100%;
     text-transform: uppercase;
     font-size: 1.8rem;
     font-weight: 700;
-    }
-.contact .leftRight .right .right-content-icon .para{
-    width:100%;
+}
+
+.contact .leftRight .right .right-content-icon .para {
+    width: 100%;
     margin-top: 0.5rem;
-    }
-.contact .leftRight .right .right-content-icon .para a{
+}
+
+.contact .leftRight .right .right-content-icon .para a {
     color: var(--white);
     text-decoration: none;
+}
 
-    }
-.contact .leftRight .right .right-content-icon .icon{
-margin-left: 2rem;
+.contact .leftRight .right .right-content-icon .icon {
+    margin-left: 2rem;
+}
 
+.contact .leftRight .right .social-icons {
+    display: flex;
+    gap: 2rem;
+    color: var(--backgroundMeniIcons);
 }
-.contact .leftRight .right .social-icons{
-display: flex;
-gap: 2rem;
-color: var(--backgroundMeniIcons);
+
+.contact .leftRight .right .social-icons span a {
+    width: 4rem;
+    height: 4rem;
+    color: var(--white);
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--backgroundMeniIcons);
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
 }
-.contact .leftRight .right .social-icons span a{
-width: 4rem;
-height: 4rem;
-color: var(--white);
-border-radius:100%;
-display: flex;
-align-items: center;
-justify-content: center;
-background-color: var(--backgroundMeniIcons);
-text-decoration: none;
-transition: all 0.3s ease-in-out;
+
+.contact .leftRight .right .social-icons span a:hover {
+    background-color: var(--PrimaryColor);
 }
-.contact .leftRight .right .social-icons span a:hover{
-background-color: var(--PrimaryColor);
-}
-.contact .leftRight .right .social-icons span svg{
+
+.contact .leftRight .right .social-icons span svg {
     font-size: 1.6rem;
     transition: all 0.3s ease-in-out;
 }
-.contact .leftRight .right .social-icons span:hover svg{
-transform: scale(1.2);
+
+.contact .leftRight .right .social-icons span:hover svg {
+    transform: scale(1.2);
 }
 
-.contact .leftRight .right .right-content-icon .icon{
-font-size: 2rem;
-color: var(--PrimaryColor);
+.contact .leftRight .right .right-content-icon .icon {
+    font-size: 2rem;
+    color: var(--PrimaryColor);
 }
-
 
 @media screen and (max-width: 1200px) {
-
-    .contact .leftRight .left{
+    .contact .leftRight .left {
         width: 60%;
     }
 
-    .contact .leftRight .right{
+    .contact .leftRight .right {
         width: 40%;
     }
 
 }
+
 @media screen and (max-width: 990px) {
-    .contact .leftRight{
+    .contact .leftRight {
         gap: 5rem;
     }
-
 }
+
 @media screen and (max-width:768px) {
-    .contact .leftRight{
-        flex-direction: column;  
-        margin-top: 5rem;  
+    .contact .leftRight {
+        flex-direction: column;
+        margin-top: 5rem;
     }
-/* contact ka left side section */
-    .contact .leftRight .left{
+
+    /* contact ka left side section */
+    .contact .leftRight .left {
         width: 100%;
     }
 
-    .contact form div{
+    .contact form div {
         justify-content: start;
     }
 
-    .contact form div input{
-      
-        text-align:start;
-       
-    }
-    .contact form div textarea{
-      
+    .contact form div input {
         text-align: start;
-        
+    }
+
+    .contact form div textarea {
+        text-align: start;
     }
 
     /* contact ka right side section */
+    .contact .leftRight .right {
+        width: 100%;
+        align-items: start;
+    }
 
-.contact .leftRight .right{
-    width: 100%;
-    align-items: start;
-}
-.contact .leftRight .right .right-content{
-    text-align: start;
- }
-    
+    .contact .leftRight .right .right-content {
+        text-align: start;
+    }
 }
 
 @media screen and (max-width:768px) {
-
-    .contact .leftRight{
-        gap:4rem;
-        margin-top: 4rem;  
+    .contact .leftRight {
+        gap: 4rem;
+        margin-top: 4rem;
     }
-    .contact form div{
+
+    .contact form div {
         width: 100%;
         flex-direction: column;
     }
-    .contact form div input{
+
+    .contact form div input {
         width: 100%;
     }
-    .contact .leftRight .right .right-content-icon{
+
+    .contact .leftRight .right .right-content-icon {
         justify-content: center;
         flex-direction: row-reverse;
-        }
-        .contact .leftRight .right .right-content-icon .icon{
-            margin-left: 0rem;
-            margin-right: 2rem;
-            }
+    }
+
+    .contact .leftRight .right .right-content-icon .icon {
+        margin-left: 0rem;
+        margin-right: 2rem;
+    }
 }

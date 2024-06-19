@@ -1,17 +1,17 @@
-.banner{
-    width:100%;
+.banner {
+    width: 100%;
     height: 100vh;
     background: linear-gradient(75deg, var(--PrimaryColor) 25%, var(--backgroundBlack) 25%);
     padding: 5rem;
     display: flex;
     justify-content: center;
     align-items: center;
-    gap:5rem;
+    gap: 5rem;
 }
 
-.banner .left{
+.banner .left {
     width: 35%;
-    height:90%;
+    height: 90%;
     background-image: url(../../img/IMG20230507143128.jpg);
     background-position: center;
     background-repeat: no-repeat;
@@ -19,7 +19,8 @@
     border-radius: 3rem;
 
 }
-.banner .right{
+
+.banner .right {
     width: 65%;
     height: 100%;
     display: flex;
@@ -29,96 +30,101 @@
     padding: 0rem 8%;
 }
 
-.banner .right h1 span{
+.banner .right h1 span {
     display: block;
     text-align: end;
 }
 
-.banner .right h1 span:nth-child(1){
-  color: var(--PrimaryColor);
-}
-.banner .right h1 span:nth-child(2){
-  color:var(--white);
+.banner .right h1 span:nth-child(1) {
+    color: var(--PrimaryColor);
 }
 
-.banner .right p{
+.banner .right h1 span:nth-child(2) {
+    color: var(--white);
+}
+
+.banner .right p {
     text-align: end;
-    color:var(--white);
+    color: var(--white);
     margin-top: 1rem;
 }
 
-
-
 @media screen and (max-width: 1200px) {
-
-         .banner .right{
+    .banner .right {
         padding: 0rem 5%;
     }
-   }
+}
 
-   @media screen and (max-width: 770px) {
-
-    .banner{
+@media screen and (max-width: 770px) {
+    .banner {
         background: linear-gradient(75deg, var(--PrimaryColor)40%, var(--backgroundBlack) 40%);
         height: auto;
-flex-direction: column;
-gap: 5rem;
+        flex-direction: column;
+        gap: 5rem;
+        padding: 5rem 3rem 11.5rem 3rem;
     }
-    .banner .left{
+
+    .banner .left {
         width: 100%;
         height: 50rem;
         padding: 0%;
     }
-    .banner .right{
+
+    .banner .right {
         width: 100%;
         height: auto;
         padding: 0%;
     }
-    .banner .right h1{
+
+    .banner .right h1 {
         font-size: 3.8rem;
         line-height: 5.5rem;
-         }
-   
-   }
-
-
-   @media screen and (max-width: 721px) {
-
-    .banner{
-        background: linear-gradient(155deg, var(--PrimaryColor)35%, var(--backgroundBlack) 35%);
     }
-    .banner .left{
+}
+
+
+@media screen and (max-width: 721px) {
+
+    .banner {
+        background: linear-gradient(155deg, var(--PrimaryColor)30%, var(--backgroundBlack) 30%);
+    }
+
+    .banner .left {
         width: 100%;
         max-width: 30rem;
         height: 30rem;
-        border-radius:100%;
+        border-radius: 100%;
         border: 0.4rem solid #252525;
     }
-    .banner .right{
+
+    .banner .right {
         align-items: center;
     }
-    .banner .right h1 span{
+
+    .banner .right h1 span {
         text-align: center;
     }
-    .banner .right p{
+
+    .banner .right p {
         text-align: center;
     }
-   }
+}
 
-   @media screen and (max-width: 421px) {
+@media screen and (max-width: 421px) {
 
-    .banner{
-        background: linear-gradient(155deg, var(--PrimaryColor)30%, var(--backgroundBlack) 30%);
-        padding: 4rem 2rem;
-        gap:4rem;
+    .banner {
+        background: linear-gradient(155deg, var(--PrimaryColor)25%, var(--backgroundBlack) 25%);
+        padding: 4rem 2rem 10.5rem 2rem;
+        gap: 4rem;
     }
-    .banner .left{
+
+    .banner .left {
         max-width: 20rem;
         height: 20rem;
     }
-    .banner .right h1{
+
+    .banner .right h1 {
         font-size: 2.8rem;
         line-height: 4.0rem;
-         }
-
-   }
+    }
+}
