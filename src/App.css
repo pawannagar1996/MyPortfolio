@@ -203,7 +203,6 @@ button:hover::after {
 }
 
 .tooltip .tooltiptext {
-  display: none;
   opacity: 0;
   width: 9rem;
   bottom: 130%;
@@ -218,7 +217,7 @@ button:hover::after {
   /* Position the tooltip */
   position: absolute;
   z-index: 1;
-  transition: all 5s ease-in-out;
+  transition: all 0.5s ease-in;
 }
 
 .tooltip .tooltiptext::after {
@@ -232,8 +231,10 @@ button:hover::after {
   border-color: black transparent transparent transparent;
 }
 
-
-
+.tooltip:hover .tooltiptext {
+  display: inline-block;
+  opacity: 0.8;
+}
 
 @media screen and (max-width: 1200px) {
   h1 {
@@ -247,10 +248,11 @@ button:hover::after {
 }
 
 @media screen and (max-width: 768px) {
-.animateCursor{
-display: block;
+  .animateCursor {
+    display: block;
 
   }
+
   .pTB100 {
     padding: 5rem 0rem;
   }
@@ -316,12 +318,11 @@ display: block;
   }
 
   .main-title .main-title-title-bg {
-    font-size:5rem;
+    font-size: 5rem;
     letter-spacing: 8px;
   }
 
 }
-
 
 @media screen and (max-width: 350px) {
   h1 {
@@ -342,4 +343,3 @@ display: block;
     font-size: 3rem;
   }
 }
-

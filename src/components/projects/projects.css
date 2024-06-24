@@ -68,8 +68,9 @@
 }
 
 .SwiperSlideContent span a {
+  display: inline-block;
   color: var(--backgroundMeniIcons);
-  font-size: 1.8rem;
+  font-size: 2rem;
   transition: all 0.3s ease-in-out;
 }
 

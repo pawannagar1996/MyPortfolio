@@ -96,7 +96,7 @@ function Contact(props) {
                     name="e-mail"
                     ref={eMail}
                     placeholder="e-mail"
-                    required
+                   
                   />
                 </div>
                 <div>
@@ -106,6 +106,7 @@ function Contact(props) {
                     name="mobile"
                     ref={mobile}
                     placeholder="mobile number"
+                    pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
                     required
                   />
                   <input
@@ -182,7 +183,7 @@ function Contact(props) {
                   <div className="head">Mail Me</div>
                   <div>
                     <p className="para">
-                      <a href="#">pawannagar1996@gmail.com</a>
+                      <a href="mailto:pawannagar1996@gmail.com">pawannagar1996@gmail.com</a>
                     </p>
                   </div>
                 </div>
@@ -196,7 +197,7 @@ function Contact(props) {
                   <div className="head">call me</div>
                   <div>
                     <p className="para">
-                      <a href="#">+91 705 356 0066</a>
+                      <a href="tel:+917053560066">+91 705 356 0066</a>
                     </p>
                   </div>
                 </div>
@@ -207,22 +208,22 @@ function Contact(props) {
 
               <div className="right-content social-icons">
                 <span>
-                  <a href="#">
+                  <a href="https://www.instagram.com/dashing_nagar/" target="_blank">
                     <RiInstagramFill />
                   </a>
                 </span>
                 <span>
-                  <a href="#">
+                  <a href="https://www.facebook.com/profile.php?id=100022982831289" target="_blank">
                     <FaFacebook />
                   </a>
                 </span>
                 <span>
-                  <a href="#">
+                  <a href="https://www.linkedin.com/in/pawan-nagar-296847214/" target="_blank">
                     <FaLinkedin />
                   </a>
                 </span>
                 <span>
-                  <a href="#">
+                  <a href="https://github.com/pawannagar1996" target="_blank">
                     <FaGithub />
                   </a>
                 </span>

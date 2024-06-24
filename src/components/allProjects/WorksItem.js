@@ -18,11 +18,11 @@ const WorksItem = ({ item }) => {
         <div className="work-card-inner">
           <h3 className="work-title">{item.title}</h3>
           <span>
-            <a href="#" className="work-button tooltip">
+            <a href={item.preview} className="work-button tooltip" target="_blank">
               <MdPreview />
               <span class="tooltiptext">Preview</span>
             </a>
-            <a href="#" className="work-button tooltip">
+            <a href={item.gitHub}  className="work-button tooltip" target="_blank">
               <FaGithub />
               <span class="tooltiptext">Github</span>
             </a>

@@ -1,4 +1,5 @@
 import work1 from "../../img/all-projects/1.jpg";
+import TicTacToe from "../../img/imgs-projects-live/TicTacToe.png";
 
 export const AllProjectData = [
   {
@@ -11,10 +12,12 @@ export const AllProjectData = [
   },
   {
     id: 2,
-    image: work1,
+    image: TicTacToe,
     alt: "work1",
-    title: "App Movil",
-    category: "app",
+    title: "Tic Tac Toe Game",
+    gitHub :  "https://github.com/pawannagar1996/TicTacToe",
+    preview :  "https://tictactoegame-pawannagar.vercel.app/",
+    category: "Javascript",
   },
   {
     id: 3,
@@ -37,7 +40,7 @@ export const AllProjectData = [
     image: work1,
     alt: "work1",
     title: "App Movil",
-    category: "app",
+    category: "Javascript",
     git: "",
   },
   {
@@ -61,7 +64,7 @@ export const AllProjectData = [
     image: work1,
     alt: "work1",
     title: "App Movil",
-    category: "app",
+    category: "Javascript",
     git: "",
   },
   {
@@ -82,7 +85,7 @@ export const ProjectNev = [
     name: "web",
   },
   {
-    name: "app",
+    name: "Javascript",
   },
   {
     name: "design",

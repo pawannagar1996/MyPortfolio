@@ -46,7 +46,6 @@ export default function Magnative() {
       path: "/about",
       element: (
         <>
-          {" "}
           <Header /> <About one={magnaticEffect} two={magnaticOut} />
         </>
       ),
@@ -55,7 +54,6 @@ export default function Magnative() {
       path: "/projects",
       element: (
         <>
-          {" "}
           <Header /> <Projects one={magnaticEffect} two={magnaticOut} />
         </>
       ),
@@ -64,7 +62,6 @@ export default function Magnative() {
       path: "/allprojects",
       element: (
         <>
-          {" "}
           <Header /> <AllProjects />
         </>
       ),
@@ -73,7 +70,6 @@ export default function Magnative() {
       path: "/contact",
       element: (
         <>
-          {" "}
           <Header /> <Contact one={magnaticEffect} two={magnaticOut} />
         </>
       ),

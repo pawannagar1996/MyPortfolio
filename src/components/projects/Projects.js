@@ -12,6 +12,8 @@ import { MdPreview } from "react-icons/md";
 import { FaGithub } from "react-icons/fa";
 
 import work1 from "../../img/all-projects/1.jpg";
+import TicTacToe from "../../img/imgs-projects-live/TicTacToe.png";
+
 import { Link } from "react-router-dom";
 import "./projects.css";
 
@@ -44,11 +46,27 @@ function Projects(props) {
             className="mySwiper"
           >
             <SwiperSlide>
+              <img src={TicTacToe} alt="work" />
+              <div className="SwiperSlideContent">
+                <h3>react</h3>
+                <span>
+                  <a href="https://tictactoegame-pawannagar.vercel.app/" className="tooltip" target="_blank">
+                    <MdPreview />
+                    <span class="tooltiptext">Preview</span>
+                  </a>
+                  <a href="https://github.com/pawannagar1996/TicTacToe" className="tooltip" target="_blank">
+                    <FaGithub />
+                    <span class="tooltiptext">Github</span>
+                  </a>
+                </span>
+              </div>
+            </SwiperSlide>
+
+            <SwiperSlide>
               <img src={work1} alt="work" />
               <div className="SwiperSlideContent">
                 <h3>react</h3>
                 <span>
-                  {" "}
                   <a href="#" className=" tooltip">
                     <MdPreview />
                     <span class="tooltiptext">Preview</span>
@@ -66,7 +84,6 @@ function Projects(props) {
               <div className="SwiperSlideContent">
                 <h3>react</h3>
                 <span>
-                  {" "}
                   <a href="#" className=" tooltip">
                     <MdPreview />
                     <span class="tooltiptext">Preview</span>
@@ -84,7 +101,6 @@ function Projects(props) {
               <div className="SwiperSlideContent">
                 <h3>react</h3>
                 <span>
-                  {" "}
                   <a href="#" className=" tooltip">
                     <MdPreview />
                     <span class="tooltiptext">Preview</span>
@@ -102,25 +118,6 @@ function Projects(props) {
               <div className="SwiperSlideContent">
                 <h3>react</h3>
                 <span>
-                  {" "}
-                  <a href="#" className=" tooltip">
-                    <MdPreview />
-                    <span class="tooltiptext">Preview</span>
-                  </a>
-                  <a href="#" className=" tooltip">
-                    <FaGithub />
-                    <span class="tooltiptext">Github</span>
-                  </a>
-                </span>
-              </div>
-            </SwiperSlide>
-
-            <SwiperSlide>
-              <img src={work1} alt="work" />
-              <div className="SwiperSlideContent">
-                <h3>react</h3>
-                <span>
-                  {" "}
                   <a href="#" className=" tooltip">
                     <MdPreview />
                     <span class="tooltiptext">Preview</span>
@@ -137,7 +134,6 @@ function Projects(props) {
 
         <div className="projectBtn">
           <Link to="/allprojects">
-            {" "}
             <button
               className="magnatic"
               onMouseEnter={() => {
