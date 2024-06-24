@@ -128,7 +128,7 @@ export const About = (props) => {
           </div>
 
           <div className="right">
-            <span className="tagcloud"></span>
+            <span className="tagcloud"><TagCloud /></span>
           </div>
         </div>
       </div>
