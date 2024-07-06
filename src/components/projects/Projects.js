@@ -13,6 +13,7 @@ import { FaGithub } from "react-icons/fa";
 
 import work1 from "../../img/all-projects/1.jpg";
 import TicTacToe from "../../img/imgs-projects-live/TicTacToe.png";
+import FormOne from "../../img/imgs-projects-live/FormOne.png";
 
 import { Link } from "react-router-dom";
 import "./projects.css";
@@ -48,7 +49,7 @@ function Projects(props) {
             <SwiperSlide>
               <img src={TicTacToe} alt="work" />
               <div className="SwiperSlideContent">
-                <h3>react</h3>
+                <h3>Javascript</h3>
                 <span>
                   <a href="https://tictactoegame-pawannagar.vercel.app/" className="tooltip" target="_blank">
                     <MdPreview />
@@ -63,15 +64,15 @@ function Projects(props) {
             </SwiperSlide>
 
             <SwiperSlide>
-              <img src={work1} alt="work" />
+              <img src={FormOne} alt="FormOne" />
               <div className="SwiperSlideContent">
-                <h3>react</h3>
+                <h3>HTML5 & CSS3</h3>
                 <span>
-                  <a href="#" className=" tooltip">
+                <a href="https://form-one-pawannagar.vercel.app/" className="tooltip" target="_blank">
                     <MdPreview />
                     <span class="tooltiptext">Preview</span>
                   </a>
-                  <a href="#" className=" tooltip">
+                  <a href="https://github.com/pawannagar1996/FormOne" className="tooltip" target="_blank">
                     <FaGithub />
                     <span class="tooltiptext">Github</span>
                   </a>

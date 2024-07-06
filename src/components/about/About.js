@@ -1,42 +1,9 @@
-import React, { useEffect } from "react";
 import { FaDownload } from "react-icons/fa";
-import TagCloud from "TagCloud";
 import "./about.css";
 import SkillData from "./SkillsData";
+import manLottie from "../../img/about-page/manLottie.gif";
 
 export const About = (props) => {
-  useEffect(() => {
-    return () => {
-      const cotainer = ".tagcloud";
-      const texts = [
-        "HTML5",
-        "CSS3",
-        "SASS",
-        "Bootstarp5",
-        "JavaScript",
-        "JQuery",
-        "TypeScript",
-        "ReactJs",
-        "Routing",
-        "ReduxJs",
-        "FiberJs",
-        "SwiperJs",
-        "TagCloudJs",
-        "FramerMotionJs",
-        "ReactIconsJs",
-        "ReactAnimatedCursorJs",
-      ];
-      const options = {
-        radius: 300,
-        maxSpeed: "normal",
-        initSpeed: "normal",
-        keep: true,
-      };
-      TagCloud(cotainer, texts, options);
-
-    };
-  }, []);
-
   return (
     <div className="wrapper about-skill">
       <div className="aboutMe layout">
@@ -89,10 +56,14 @@ export const About = (props) => {
           <div className="right">
             <h2>What I Love To Do</h2>
             <p>
-              I'm a Tunisian based web designer & front‑end developer focused on
-              crafting clean & user‑friendly experiences, I am passionate about
-              building excellent software that improves the lives of those
-              around me.
+              I'm a Dedicated Frontend Developer, Web Designer, and Javascript
+              Enthusiast Focused on Crafting User-friendly Websites With Clean,
+              Innovative Designs. With Over 3+ Years of Experience in Cms
+              Management, I Excel in Optimizing Website Content and User
+              Interfaces to Achieve Business Goals. Proficient in Html5, Css3,
+              Bootstrap5, Tailwind, Javascript, and React.js, I Leverage My
+              Skills to Streamline Processes and Deliver Seamless Digital
+              Experiences. around me.
             </p>
             <button
               className="magnatic"
@@ -128,7 +99,7 @@ export const About = (props) => {
           </div>
 
           <div className="right">
-            <span className="tagcloud">pawan</span>
+            <img src={manLottie} alt="lottie animation image" />
           </div>
         </div>
       </div>

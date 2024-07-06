@@ -1,14 +1,17 @@
 import work1 from "../../img/all-projects/1.jpg";
 import TicTacToe from "../../img/imgs-projects-live/TicTacToe.png";
+import FormOne from "../../img/imgs-projects-live/FormOne.png";
+import Animations from "../../img/imgs-projects-live/Animations.png";
 
 export const AllProjectData = [
   {
     id: 1,
-    image: work1,
-    alt: "work1",
-    title: "web design",
-    category: "web",
-    git: "",
+    image: FormOne,
+    alt: "FormOne",
+    title: "Form One",
+    category: "HTML5 & CSS3",
+    preview :  "https://form-one-pawannagar.vercel.app/",
+    gitHub: "https://github.com/pawannagar1996/FormOne",
   },
   {
     id: 2,
@@ -29,11 +32,12 @@ export const AllProjectData = [
   },
   {
     id: 4,
-    image: work1,
-    alt: "work1",
-    title: "web design",
-    category: "web",
-    git: "",
+    image: Animations,
+    alt: "Animations",
+    title: "Animations",
+    category: "HTML5 & CSS3",
+    preview :  "https://animations-pawannagar.vercel.app/",
+    gitHub: "https://github.com/pawannagar1996/Animations",
   },
   {
     id: 5,
@@ -56,7 +60,7 @@ export const AllProjectData = [
     image: work1,
     alt: "work1",
     title: "web design",
-    category: "web",
+    category: "HTML5 & CSS3",
     git: "",
   },
   {
@@ -82,7 +86,7 @@ export const ProjectNev = [
     name: "all",
   },
   {
-    name: "web",
+    name: "HTML5 & CSS3",
   },
   {
     name: "Javascript",

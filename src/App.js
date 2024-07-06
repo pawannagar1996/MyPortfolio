@@ -5,7 +5,7 @@ import "./App.css";
 function App() {
   return (
     <div className="App">
-       {/* <span className="animateCursor"><AnimatedCursorWindow /></span> */}
+       <span className="animateCursor"><AnimatedCursorWindow /></span>
       <Magnative />
     </div>
   );

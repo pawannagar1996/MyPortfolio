@@ -18,12 +18,14 @@
     justify-content: center;
     align-items: center;
   flex-direction: column;
+
 }
 .aboutMe .leftRight .left .left-side-row{
     width:100%;
     display: flex;
     justify-content: center;
     align-items: center;
+
 }
 .aboutMe .leftRight .left .left-side-row .left-side{
     width: 50%;
@@ -92,6 +94,7 @@
     justify-content: center;
     align-items: center;
   flex-direction: column;
+  order: 2;
 }
 .skills .leftRight .left .skills-container{
     width: 100%;
@@ -135,28 +138,18 @@ transform: rotateY(360deg);
 /* ===== skills me ka right side ====== */
 .skills .leftRight .right{
     width: 50%;
- /* height: 50rem; */
+ height:auto;
     display: flex;
     justify-content: center;
     align-items: center;
-  flex-direction: column;
-  overflow: hidden;
+    order: 1;
 }
-.tagcloud{
-    display: inline-block;
-    font-weight: 500;
-    letter-spacing: 0.2rem;
-    font-size: 1.8rem;
-    width: 100%!important;
-    height: 46rem!important;
+.skills .leftRight .right img{
+    width: 100%;
+ height:auto;
+ vertical-align: middle;
 }
-.tagcloud--item {
-    color: var(--white);
-    text-transform: uppercase;
-}
-.tagcloud--item:hover {
-    color: var(--PrimaryColor);
-}
+
 
 @media screen and (max-width: 992px) {
     .skills .leftRight .left .skills-container{
